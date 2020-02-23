@@ -14,6 +14,7 @@ class MP3Importer
         @files.delete(i)
       end 
     end
+    @files
   end 
   
   def import 
