@@ -22,7 +22,7 @@ class MP3Importer
   def import 
     
     self.files.each do |i|
-      puts i 
+      Song.new_by_filename(i)
     end 
   
     
