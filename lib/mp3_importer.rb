@@ -20,7 +20,9 @@ class MP3Importer
   end 
   
   def import 
-    puts @files
+    @files.each do |i|
+      puts i
+    end 
   
     
   end 
