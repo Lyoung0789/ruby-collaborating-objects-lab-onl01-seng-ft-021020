@@ -1,5 +1,5 @@
 class MP3Importer
-  attr_accessor :path
+  attr_accessor :path, :files
   
   def initialize(path)
     @path = path 
@@ -7,14 +7,14 @@ class MP3Importer
   
   
   def files 
-    files = Dir.entries(@path)
+    @files = Dir.entries(@path)
     
-    files.collect do |i|
+    @files.collect do |i|
       if i == "." || i ==".."
-        files.delete(i)
+        @files.delete(i)
       end 
     end
-    files
+    @files
   end 
   
   def import 
