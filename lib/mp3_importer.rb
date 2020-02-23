@@ -12,6 +12,7 @@ class MP3Importer
       if i == "." || i ==".."
         files.delete_at(i)
       end 
+    end
     puts files
   end 
   
