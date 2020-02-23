@@ -14,7 +14,7 @@ class MP3Importer
         files.delete(i)
       end 
     end
-    puts files
+    files
   end 
   
   def import 
