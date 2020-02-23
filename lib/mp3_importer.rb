@@ -11,7 +11,7 @@ class MP3Importer
     puts files
     files.collect do |i|
       if i == "." || i ==".."
-        files.delete_at(i)
+        i.delete
       end 
     end
     puts files
