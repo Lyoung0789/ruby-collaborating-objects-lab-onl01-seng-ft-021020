@@ -16,10 +16,11 @@ class MP3Importer
       end 
     end
     @files
+    puts @files 
   end 
   
   def import 
-    puts @files
+    
   
     
   end 
