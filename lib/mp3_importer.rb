@@ -20,7 +20,8 @@ class MP3Importer
   end 
   
   def import 
-    files.each do |i|
+    
+    self.files.each do |i|
       puts i 
     end 
   
